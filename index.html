@@ -12,6 +12,7 @@ body {
   background: #000;
   color: #fff;
   text-align: center;
+  cursor: pointer;
 }
 
 .container {
@@ -31,21 +32,19 @@ h1 {
   font-size: 30px;
 }
 
-/* Highlight */
 .highlight {
   color: #00c3ff;
 }
 
-/* 🔥 TOP CTA BOX */
-.top-cta {
+/* 🔥 TOP BUTTON */
+.top-btn {
   margin-top: 15px;
-  padding: 12px;
-  background: rgba(0,195,255,0.1);
+  padding: 14px;
+  border-radius: 12px;
   border: 1px solid #00c3ff;
-  border-radius: 10px;
-  font-weight: bold;
   color: #00c3ff;
-  box-shadow: 0 0 10px rgba(0,195,255,0.3);
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0,195,255,0.4);
 }
 
 /* Trust Box */
@@ -54,10 +53,10 @@ h1 {
   padding: 18px;
   background: rgba(255,255,255,0.05);
   border-radius: 12px;
-  text-align: left;
   max-width: 350px;
   margin-left: auto;
   margin-right: auto;
+  text-align: left;
 }
 
 .box p {
@@ -67,30 +66,36 @@ h1 {
 
 /* Telegram logo */
 .telegram-logo {
-  width: 60px;
+  width: 65px;
   margin-top: 25px;
 }
 
-/* 🔥 Button */
+/* 🔥 MAIN BUTTON */
 .btn {
   display: inline-block;
   margin-top: 20px;
   padding: 16px 30px;
   background: linear-gradient(90deg, #00c3ff, #0072ff);
   color: #fff;
-  text-decoration: none;
   border-radius: 12px;
   font-weight: bold;
   font-size: 16px;
-  box-shadow: 0 0 20px rgba(0,123,255,0.5);
+  box-shadow: 0 0 20px rgba(0,123,255,0.6);
   animation: pulse 1.5s infinite;
 }
 
-/* Button animation */
+/* Animation */
 @keyframes pulse {
   0% { transform: scale(1); }
-  50% { transform: scale(1.05); }
+  50% { transform: scale(1.06); }
   100% { transform: scale(1); }
+}
+
+/* Extra trust lines */
+.trust {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #bbb;
 }
 
 .footer {
@@ -101,6 +106,12 @@ h1 {
 </style>
 
 <script>
+// 🔥 Full page clickable
+document.addEventListener("click", function(){
+  window.location.href = "https://t.me/+QMeos_tx2VgxOTZl";
+});
+
+// 🔥 Auto redirect
 setTimeout(function(){
   window.location.href = "https://t.me/+QMeos_tx2VgxOTZl";
 }, 5000);
@@ -111,32 +122,36 @@ setTimeout(function(){
 
 <div class="container">
 
-<!-- Image -->
 <img class="banner" src="https://i.ibb.co/2DdFJgr/IMG-20260330-203150-107.jpg">
 
-<!-- Title -->
 <h1>𝐄𝐀𝐑𝐍 𝐖𝐈𝐓𝐇 <span class="highlight">𝐇𝐀𝐂𝐊𝐈𝐈</span></h1>
 
-<!-- 🔥 TOP CTA (NEW) -->
-<div class="top-cta">
+<!-- 🔥 TOP BUTTON -->
+<div class="top-btn">
 🚀 JOIN TELEGRAM NOW
 </div>
 
-<!-- Trust Box -->
+<!-- 🔥 TRUST BOX -->
 <div class="box">
-  <p>🔥 INDIA'S NUMBER 1 TRUST CHANNEL</p>
-  <p>📊 STRATEGY NUMBER BETS</p>
-  <p>💰 ANY LOSS RECOVERY HELP</p>
-  <p>⚡ FAST JOIN TELEGRAM</p>
+  <p>🔥 INDIA'S MOST TRUSTED COMMUNITY</p>
+  <p>🔥 ALL LOSS COVER WITH PANEL</p>
+  <p>📊 DAILY NUNBER BETS 100%</p>
+  <p>👥 THOUSANDS OF ACTIVE MEMBERS</p>
+  <p>⚡ FAST SUPPORT & LIVE GUIDANCE</p>
 </div>
 
-<!-- Telegram Icon -->
+<!-- 🔥 EXTRA TRUST -->
+<div class="trust">
+Join thousands of users already growing with our community 🚀  
+Limited access available — act fast ⚡
+</div>
+
 <img class="telegram-logo" src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png">
 
 <!-- 🔥 MAIN BUTTON -->
-<a href="https://t.me/+QMeos_tx2VgxOTZl" class="btn">
+<div class="btn">
 🚀 JOIN TELEGRAM NOW
-</a>
+</div>
 
 <p class="footer">Redirecting automatically in 5 seconds...</p>
 
